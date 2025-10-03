@@ -1,0 +1,76 @@
+:root{
+    --blanco: white;
+    --oscuro: black;
+    --primario: #30c213;
+    --secundario: rgb(209, 207, 54);
+    --gris: #757575;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "krub", sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+.titulo span{
+    font-size: 2rem;
+}
+.subtitulo{
+    text-align: center;
+}
+.subtitulo span{
+    font-size: 1.5rem;
+}
+.container{
+    width: 120rem;
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+.nav-principal{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) { 
+   .nav-principal {
+        flex-direction: row;
+        justify-content: space-between;
+   }
+}
+.nav-principal a{
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.nav-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.hero{
+    background-image: url(../img/freelancerBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
