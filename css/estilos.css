@@ -167,6 +167,10 @@ a{
 .descripcion{
     line-height: 2;
 }
+.cont{
+    max-width: 90%;
+    width: 90%;
+}
 .formulario{
     background-color: var(--gris);
     border-radius: 1rem;
@@ -189,11 +193,12 @@ a{
     .cont-campos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto 20rem;
+        grid-template-rows: auto auto  20rem;
         column-gap: 1.5rem;
     }
     .campo:nth-child(3),
-    .campo:nth-child(4){
+    .campo:nth-child(4),
+    .campo:nth-child(5){
         grid-column: 1 / 3;
     }
 }
@@ -219,6 +224,7 @@ a{
     max-width: 100%;
     margin: 0 auto;
 }
+
 @media (min-width: 768px) {
    .servicios{
     display: grid;
@@ -235,13 +241,13 @@ a{
     -webkit-box-shadow: 1px 24px 44px -1px rgba(13,19,74,0.75);
     -moz-box-shadow: 1px 24px 44px -1px rgba(13,19,74,0.75);
 }
-/* estilos para pagina de contacto */
+/* estilos para pagina sobre mi */
 
 #miFoto{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    
+    margin: 0 auto;
 }
 .cabeza{
     display: flex;
@@ -260,4 +266,10 @@ footer{
     background-color: var(--oscuro);
     color: #30c213;
     padding: 1rem;
+}
+
+/* estilo de pagina de contacto */
+
+@media (min-width: 768px) {
+    
 }
