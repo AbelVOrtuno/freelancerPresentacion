@@ -170,6 +170,7 @@ a{
 .cont{
     max-width: 90%;
     width: 90%;
+    height: auto;
 }
 .formulario{
     background-color: var(--gris);
@@ -269,7 +270,26 @@ footer{
 }
 
 /* estilo de pagina de contacto */
-
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+}
 @media (min-width: 768px) {
+    .contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 3rem;
+        max-width: 120rem;
+        height: auto;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .info{
+        text-align: center;
+    }
     
 }
+
